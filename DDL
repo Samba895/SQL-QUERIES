@@ -1,0 +1,25 @@
+## CREATE
+
+create table student 
+(
+id int primary key,
+first_name varchar(20) not null,
+last_name varchar(20),
+age int check(age>=18),
+email varchar(20) unique,
+branch varchar(15) default 'MCA'
+);
+
+##ALTER
+
+alter table student add column marks int;
+alter table student drop column marks;
+alter table student rename pillalu;
+alter table student rename age to vayasu;
+
+##DROP
+drop table student;
+
+## TRUNCATE
+truncate table student;
+
