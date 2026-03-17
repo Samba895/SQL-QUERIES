@@ -1,0 +1,14 @@
+## INSERT
+
+insert into student values (101,'mandyam','samba',23,'mandyamsambasiva895@gmail.com');
+insert into student values (102,'varapana','pavan',23,'pavankumar99@gmail.com');
+
+##UPDATE
+update student set marks=85 where name='samba';
+update student set age=null where age=23;
+update student set name='hari' where id=101 and first_name='samba';
+
+##DELETE
+delete from student where last_name='pavan';
+delete from student where id=102 or marks=80;
+delete from student where id=103 and first_name='varapana';
